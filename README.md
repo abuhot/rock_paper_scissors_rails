@@ -8,7 +8,18 @@ We are going to build a simple game. Users are allowed to choose Rock, Paper, or
 
 And we will tell them whether they won or lost.
 
+### Setup
+
+ - Clone directly from this repository (**don't fork**).
+ - `cd` to the root folder of the application.
+ - `bundle install` (or just `bundle` for short).
+ - `rails server` (or just `rails s` for short).
+ - Once the server has booted up successfully, visit [http://localhost:3000](http://localhost:3000) in Chrome. If all went well, you should see the "Welcome Aboard" page.
+ - Open up the entire folder of code in Sublime (on Windows, **File → Open Folder...**; on Mac, you can select a folder using the usual **File → Open...** dialog).
+
 ### Part 1
+
+This is currently a brand new Rails app, with absolutely no routes, controllers, etc.
 
 Add support for each URL one at a time. For each one,
 
