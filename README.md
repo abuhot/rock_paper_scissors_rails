@@ -23,7 +23,7 @@ This is currently a brand new Rails app, with absolutely no routes, controllers,
 
 Add support for [each](http://localhost:3000/rock) [of](http://localhost:3000/paper) [our](http://localhost:3000/scissors) three URLs one at a time. For each one,
 
- 1. Complete the RCAV and display "Hi!" to prove that you did so. Make up whatever names you want for the controller and action.
+ 1. Complete the [RCAV](https://gist.github.com/rbetina/c200d88adcfe0d4dcd04) and display "Hi!" to prove that you did so. Make up whatever names you want for the controller and action.
  1. Now step back into the action and write some logic to determine whether the player won or lost. Put the computer move and the outcome into instance variables.
  1. In the view template, display the instance variables. Format it a little with some markup and some copy.
 
