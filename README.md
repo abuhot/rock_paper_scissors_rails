@@ -20,7 +20,8 @@ Add support for each URL one at a time. For each one,
 
 Once you have completed the above for all three URLs,
 
- 1. Add links to each page to get to the other pages.
- 1. Link to Bootstrap and make it look even nicer.
+ 1. On each page, add links to get to the other two pages (so that our users don't have to keep typing into the address bar).
+ 1. I dropped three images in the `public/assets/images` folder: `rock.png`, `paper.png`, and `scissors.png`. Therefore, they are available to use at [http://localhost:3000/assets/images/rock.png](http://localhost:3000/assets/images/rock.png), etc. Use the images on your pages as you see fit.
+ 1. I also dropped `bootstrap.css` in the `public/assets/css` folder. Link to it in `app/views/layouts/application.html.erb`, and use Bootstrap styles to make everything look nicer.
 
 
