@@ -7,6 +7,14 @@
   <%= csrf_meta_tags %>
 
   <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+  <% if @outcome == "lost" %>
+    <script src="/assets/js/jquery.box2d.min.js"></script>
+    <script>
+    $(function() {
+      $('img').box2d({'y-velocity':5})
+    });
+    </script>
+  <% end %>
 </head>
 <body>
 
