@@ -1,10 +1,9 @@
 class GameController < ApplicationController
 
   def flexible
+    # Rails, behind the scenes, creates a variable for us called 'params';
+    #   a Hash that contains all user input:
 
-    @all_moves = Move.all
-
-    # Rails, behind the scenes:
     # params = {"move"=>"rock"}
 
     @user_move = params["move"]
@@ -27,6 +26,7 @@ class GameController < ApplicationController
       @outcome = "won"
     end
 
+    # Adding an entry to the Move table for this turn
     m = Move.new
     m.user_move = @user_move
     m.computer_move = @computer_move
@@ -40,7 +40,11 @@ class GameController < ApplicationController
       m.user_wins = 0
       m.computer_wins = 0
     end
+
     m.save
+
+    # Retrieving all past moves in order to draw the log
+    @all_moves = Move.all
 
     render("move.html.erb")
   end
