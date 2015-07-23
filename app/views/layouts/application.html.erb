@@ -5,14 +5,28 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+  <%= yield %>
 
-<p><a href="/rock">Play rock.</a></p>
-<p><a href="/paper">Play paper.</a></p>
-<p><a href="/scissors">Play scissors.</a></p>
+  <div class="row">
+    <div class="col-md-4">
+      <a href="/rock" class="btn btn-success btn-block btn-lg">Play rock.</a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="/paper" class="btn btn-success btn-block btn-lg">Play paper.</a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="/scissors" class="btn btn-success btn-block btn-lg">Play scissors.</a>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
