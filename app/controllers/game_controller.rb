@@ -2,6 +2,8 @@ class GameController < ApplicationController
 
   def flexible
 
+    @all_moves = Move.all
+
     # Rails, behind the scenes:
     # params = {"move"=>"rock"}
 

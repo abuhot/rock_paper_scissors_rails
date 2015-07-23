@@ -30,3 +30,38 @@
   </div>
 </div>
 
+<table class="table table-hover table-striped">
+  <tr>
+    <th>User Move</th>
+    <th>Computer Move</th>
+    <th>User Wins</th>
+    <th>Computer Wins</th>
+  </tr>
+  <% @all_moves.each do |zebra| %>
+    <tr>
+      <td>
+        <%= zebra.user_move %>
+      </td>
+
+      <td>
+        <%= zebra.computer_move %>
+      </td>
+
+      <td>
+        <%= zebra.user_wins %>
+      </td>
+
+      <td>
+        <%= zebra.computer_wins %>
+      </td>
+    </tr>
+  <% end %>
+
+  <tr>
+    <th></th>
+    <th></th>
+    <th><%= @all_moves.sum(:user_wins) %></th>
+    <th><%= @all_moves.sum(:computer_wins) %></th>
+  </tr>
+
+</table>
